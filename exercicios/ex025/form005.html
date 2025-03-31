@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais formularios</title>
+</head>
+<body>
+    <h1>Teste de formularios</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sexmas"><label for="sexmas">Masculino</label>
+            <input type="radio" name="sexo" id="sexfem"><label for="sexfem">Feminino</label>
+            <input type="radio" name="sexo" id="sexnbi"><label for="sexnbi">Nao-binario</label>
+            <input type="radio" name="sexo" id="isexpref"><label for="isexpref">Prefiro nao informar</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natacao </label><br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tenis</label> <br>
+            <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Volei</label> <br>
+            <input type="checkbox" name="escor" id="iescor"><label for="iescor">Corrida</label><br>
+            <input type="checkbox" name="esjud" id="iesjud"><label for="iesjud">Judo</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
