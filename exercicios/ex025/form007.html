@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>Teste de formularios</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Selecione seu estado: </label>
+            <select name="estado" id="iest">
+                    <option value="" selected>---Escolha---</option>
+                    <optgroup label="Regiao sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">Sao Paulo</option>
+                    </optgroup>
+                <optgroup label="Regia Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="CE">Ceara</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="MA">Maranhao</option>
+                </optgroup>
+                <optgroup label="Reiao Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+                <optgroup label="Regiao Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="PA">Para</option>
+                    <option value="AC">Acre</option>
+                    <option value="RO">Roraima</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissao: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Admnistrador</option>
+                <option>Engenheiro</option>
+                <option>Pedreiro</option>
+                <option>Advogado</option>
+                <option>Massagista</option>
+                <option>Piloto de F1</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imens">Mensagem: </label><br>
+            <textarea name="mens" id="imens" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
