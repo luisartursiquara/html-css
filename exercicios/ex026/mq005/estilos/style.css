@@ -36,10 +36,13 @@ menu {
 }
 menu > ul >  li {
     list-style-type: none;
+    
 }
 menu > ul > li > a {
     display: block;
     padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
     text-decoration: none;
     background-color: rgb(71, 71, 71);
     color: white;
@@ -49,6 +52,7 @@ menu > ul > li > a {
 
 menu > ul > li > a:hover {
     background-color: rgb(110, 110, 110);
+    transition: 2s;
 }
 
 
